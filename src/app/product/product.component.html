@@ -1,0 +1,17 @@
+<div class="wrapper">
+    <div class="container">
+        <div class="container__desc" *ngFor="let product of productList">
+            <a href="/products/{{product.id}}">
+            <img src="{{product.image}}" alt="" class="container__img">
+            <div class="container__desc--title">
+                <p>{{product.name}}</p>
+            </div>
+        </a>
+        </div>
+        
+    </div>
+
+
+    
+</div>
+

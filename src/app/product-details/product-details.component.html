@@ -1,0 +1,7 @@
+<p>product-details works! <b>{{product?.name}}</b></p>
+<p>Sản phẩm tương tự</p>
+<div>
+    <div *ngFor="let product of otherProducts">
+        <a style="cursor: pointer;" (click)="navigateToProduct(product.id)">{{product.name}}</a>
+    </div>
+</div>
